@@ -61,7 +61,7 @@ public class Employee {
 			emp.wiproId = Integer.toString(c1.getNumber());
 			c1.increase();
 		}catch(Exception e){
-			
+			System.out.println("Algo de errado ocorreu");
 		}
 	}
 	

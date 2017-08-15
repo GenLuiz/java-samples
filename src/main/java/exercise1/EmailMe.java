@@ -18,12 +18,13 @@ public class EmailMe {
 		return message;
 	}
 	
-	public static void SendMail(String empName){
+	public static void SendMail(String empName, String empId){
 //		TODO: implement me 
 		System.out.println("Destiny: " + destiny);
 		System.out.println("subject: " + subject);
+		System.out.println("EmployeeId: " + empId);
 		System.out.println("Message: " + message + empName);
-		
 		System.out.println("Manager notified!");
+		System.out.println("------------------------------------");
 	}
 }

@@ -15,7 +15,7 @@ public class Register {
 	public void addEmployee(Employee employee){
 		employees.add(employee);
 		
-		EmailMe.SendMail(employee.getName());
+		EmailMe.SendMail(employee.getName(),employee.getWiproId());
 	}
 	
 	public void removeEmployee(Employee employee){

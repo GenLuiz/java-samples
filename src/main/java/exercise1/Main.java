@@ -31,5 +31,26 @@ public class Main {
 		emp.registerMe(count,emp);
 		
 		register.addEmployee(emp);
+		
+		
+		Employee emp2 = new Employee();
+		User user2 = new User();
+		
+		user2.setLogin("JAVABOYZ");
+		user2.setPassword("2015");
+		
+		contract.setName("TEAMRBW");
+		contract.setUser(user);
+		
+		emp2.setClientId("2015");
+		emp2.setContract(contract);
+		emp2.setName("J A V A B O Y S  2 0 1 7");
+		emp2.setTeam(team);
+		emp2.setUser(user2);
+		emp2.setWiproEmail("java.boys@wipro.com");
+//		
+		emp2.registerMe(count,emp2);
+		
+		register.addEmployee(emp2);
 	}
 }
