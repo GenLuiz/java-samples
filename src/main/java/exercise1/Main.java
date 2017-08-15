@@ -12,6 +12,7 @@ public class Main {
 		User user = new User();
 		Contract contract = new Contract();
 		Team team = new Team();
+		
 		team.setName("TEAMRBW");
 		
 		user.setLogin("luizfr");
@@ -30,7 +31,5 @@ public class Main {
 		emp.registerMe(count,emp);
 		
 		register.addEmployee(emp);
-		
 	}
-
 }

@@ -9,7 +9,7 @@ public class GlobalCounter {
 	private static GlobalCounter instance = new GlobalCounter();
 	
 	public static GlobalCounter getInstance(){
-		return instance;
+			return instance;		
 	}
 
 	public static void increase(){
