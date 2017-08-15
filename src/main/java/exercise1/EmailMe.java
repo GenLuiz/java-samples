@@ -1,6 +1,6 @@
 package exercise1;
 
-public class EmailMe {
+public abstract class EmailMe {
 
 	private final static String destiny = "name.manager@wipro.com";
 	private final static String subject = "New employee";
