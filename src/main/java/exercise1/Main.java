@@ -4,9 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		GlobalCounter count;
 		Register register;
-		count = GlobalCounter.getInstance();
+		GlobalCounter count = GlobalCounter.getInstance();
 		register = Register.getInstance(); 
 		Employee emp = new Employee();
 		User user = new User();
