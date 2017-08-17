@@ -2,14 +2,14 @@ package exercise2;
 
 public class Ingredient {
 	
-	private String type;
+	private String name;
 	private Measure measure;
 	
-	public String getType() {
-		return type;
+	public String getName() {
+		return name;
 	}
-	public void setType(String type) {
-		this.type = type;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	public Measure getMeasure() {

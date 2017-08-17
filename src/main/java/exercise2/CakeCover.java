@@ -1,17 +1,18 @@
 package exercise2;
+
 import java.util.List;
 
-public class Cake implements Composition {
+public class CakeCover implements Composition {
 
-	private String name;
+	private String type;
 	private List<Ingredient> ingredients;
 	
 	
-	public String getName() {
-		return name;
+	public String getType() {
+		return type;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setType(String type) {
+		this.type = type;
 	}
 
 	public List<Ingredient> getIngredients() {
@@ -20,7 +21,7 @@ public class Cake implements Composition {
 	public void setIngredients(List<Ingredient> ingredients) {
 		this.ingredients = ingredients;
 	}
-
+	
 	
 	public boolean mixture(List<Ingredient> ingredientList) {
 		// TODO Auto-generated method stub
@@ -29,17 +30,12 @@ public class Cake implements Composition {
 	
 	public boolean bake(List<Ingredient> ingredientList, Double time, Integer temperature) {
 		// TODO Auto-generated method stub
-		return true;
-	}
-	
-	public boolean cut(Cake cake){
-		// TODO Auto-generated method stub
-		return true;
+		return false;
 	}
 	
 	public boolean cook(List<Ingredient> ingredientList, Double time) {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 	
 
