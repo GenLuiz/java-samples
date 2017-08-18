@@ -1,11 +1,19 @@
 package exercise2;
+
 import java.util.List;
 
-public class Cake implements Composition {
+public class Cake {
 
+	private List<Recipe> recipes;
 	private String name;
-	private List<Ingredient> ingredients;
 	
+	
+	public List<Recipe> getRecipes() {
+		return recipes;
+	}
+	public void setRecipes(List<Recipe> recipes) {
+		this.recipes = recipes;
+	}
 	
 	public String getName() {
 		return name;
@@ -13,34 +21,35 @@ public class Cake implements Composition {
 	public void setName(String name) {
 		this.name = name;
 	}
-
-	public List<Ingredient> getIngredients() {
-		return ingredients;
-	}
-	public void setIngredients(List<Ingredient> ingredients) {
-		this.ingredients = ingredients;
-	}
-
 	
-	public boolean mixture(List<Ingredient> ingredientList) {
+	
+	public boolean cut(CakeRecipe cake){
 		// TODO Auto-generated method stub
 		return true;
 	}
 	
-	public boolean bake(List<Ingredient> ingredientList, Double time, Integer temperature) {
+	public boolean cool(Boolean baked, CakeRecipe cake) {
+		// TODO Auto-generated method stub
+		if(baked)
+			return true;
+		else
+			return false;
+	}
+	public boolean fill(FillingRecipe recipeFilling) {
 		// TODO Auto-generated method stub
 		return true;
 	}
-	
-	public boolean cut(Cake cake){
+	public Boolean group(CakeRecipe cakeRecipe) {
 		// TODO Auto-generated method stub
 		return true;
 	}
-	
-	public boolean cook(List<Ingredient> ingredientList, Double time) {
+	public Boolean cover(CakeCoverRecipe cakeCoverRecipe) {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
-	
-
+	public void isDone(String cakeName, Boolean cakeTogether, Boolean cakeFill, Boolean putCover) {
+		// TODO Auto-generated method stub
+		if(cakeTogether && cakeFill && putCover)
+			System.out.println("The " + cakeName + " is done successfully");
+	}
 }

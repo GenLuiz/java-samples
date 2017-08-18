@@ -2,27 +2,18 @@ package exercise2;
 
 import java.util.List;
 
-public class Filling implements Composition{
+public class FillingRecipe extends Recipe implements Composition{
 
-	private String type;
-	private List<Ingredient> ingredients;
+	private String name;
 	
 	
-	public String getType() {
-		return type;
+	public String getName() {
+		return name;
 	}
-	public void setType(String type) {
-		this.type = type;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public List<Ingredient> getIngredients() {
-		return ingredients;
-	}
-	public void setIngredients(List<Ingredient> ingredients) {
-		this.ingredients = ingredients;
-	}
-	
-	
 	public boolean mixture(List<Ingredient> ingredientList) {
 		// TODO Auto-generated method stub
 		return true;
@@ -38,5 +29,4 @@ public class Filling implements Composition{
 		return true;
 	}
 	
-
 }
